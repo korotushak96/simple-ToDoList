@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>to do</title>
+</head>
+<body class="main">
+    <h1>Your to do list!</h1>
+    <div class="input_wrapper">
+        <h2>Please, write here your plans!</h2>
+        <input type="text" class="input_field" placeholder="I'm going to do...">
+        <span class="input_button" onclick='newElement()'>create</span>
+    </div>
+    <ul class="todo_list">
+        
+    </ul>
+    
+    <div class="sort_menu">
+        <span class="sort_button active" data-type='active' onclick="sortListActive()">active</span>
+        <span class="sort_button backToAll" data-type='backToAll' onclick="backToAll()">All task</span>
+        <span class="sort_button done" data-type='done' onclick='sortListDone()'>done</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
